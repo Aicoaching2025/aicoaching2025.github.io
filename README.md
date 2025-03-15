@@ -29,7 +29,7 @@ Predicting **binary classification** outcomes in medical datasets.
 Segmentation of customers based on **behavioral data**.
 🔗 [View Project](https://colab.research.google.com/drive/18Gh3nq51bqw0WyWoFozwp2Nx7CUGwOP7?usp=sharing)
 
-And many more! Check out the full list of projects on the portfolio homepage.  
+And many more! Check out the full list of projects on my Github repository aicaoching2025.  
 
 ---
 
