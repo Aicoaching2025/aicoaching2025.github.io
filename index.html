@@ -41,7 +41,11 @@
         <div class="row">
             <script>
                 const projects = [
-                    { title: "Project 1", desc: "A deep learning model for image classification.", link: "#" },
+                    { 
+                        title: "Naive Bayes Spam Detection", 
+                        desc: "A Naive Bayes classifier for email spam detection with visualization.", 
+                        link: "https://colab.research.google.com/github/Aicoaching2025/Naives-Bayes/blob/main/Naive_Bayes.ipynb"
+                    },
                     { title: "Project 2", desc: "A real-time data pipeline using Spark and Kafka.", link: "#" },
                     { title: "Project 3", desc: "NLP-powered chatbot for customer support.", link: "#" },
                     { title: "Project 4", desc: "Stock price prediction using time series forecasting.", link: "#" },
@@ -57,7 +61,7 @@
                                     <div class="card-body">
                                         <h5 class="card-title text-primary">${project.title}</h5>
                                         <p class="card-text">${project.desc}</p>
-                                        <a href="${project.link}" class="btn btn-outline-primary">View</a>
+                                        <a href="${project.link}" class="btn btn-outline-primary" target="_blank">View</a>
                                     </div>
                                 </div>
                             </div>
