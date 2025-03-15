@@ -3,64 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Data Design and Discovery</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Portfolio Projects</h1>
-        <p>Showcasing machine learning, data science, and AI projects</p>
+        <h1 class="title">Data Design and Discovery</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <section class="project">
-            <h2>Project 1: [Your Existing Project 1 Title]</h2>
-            <p>[Your existing project description and details]</p>
+        <section class="intro">
+            <h2>Welcome to my Portfolio</h2>
+            <p>Explore my projects in data science and machine learning.</p>
         </section>
 
-        <section class="project">
-            <h2>Project 2: The Power of Random Forest in Finance</h2>
-            <p>Enhancing Credit Scoring for Risk Assessment using Random Forest.</p>
-            <a href="https://colab.research.google.com/github/Aicoaching2025/Random-Forest/blob/main/Random_Forest1.ipynb" target="_blank">View Project</a>
-        </section>
-
-        <section class="project">
-            <h2>Project 3: [Your Placeholder Title]</h2>
-            <p>[Placeholder description for project 3]</p>
-        </section>
-
-        <section class="project">
-            <h2>Project 4: [Your Placeholder Title]</h2>
-            <p>[Placeholder description for project 4]</p>
-        </section>
-
-        <section class="project">
-            <h2>Project 5: [Your Placeholder Title]</h2>
-            <p>[Placeholder description for project 5]</p>
-        </section>
-
-        <section class="project">
-            <h2>Project 6: [Your Placeholder Title]</h2>
-            <p>[Placeholder description for project 6]</p>
-        </section>
-
-        <section class="project">
-            <h2>Project 7: [Your Placeholder Title]</h2>
-            <p>[Placeholder description for project 7]</p>
-        </section>
-
-        <section class="project">
-            <h2>Project 8: [Your Placeholder Title]</h2>
-            <p>[Placeholder description for project 8]</p>
-        </section>
-
-        <section class="project">
-            <h2>Project 9: [Your Placeholder Title]</h2>
-            <p>[Placeholder description for project 9]</p>
+        <section class="projects">
+            <h2>Featured Projects</h2>
+            <div class="grid-container">
+                {% for project in projects %}
+                <div class="project-card">
+                    <h2>{{ project.title }}</h2>
+                    <p>{{ project.description }}</p>
+                    <div class="buttons">
+                        <a href="/project/{{ project.id }}" class="btn view">View Project</a>
+                        <a href="{{ project.colab_link }}" target="_blank" class="btn colab">Run in Colab</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Your Name - Machine Learning & Data Science Portfolio</p>
+        <p>&copy; 2025 Data Design and Discovery. All rights reserved.</p>
     </footer>
 </body>
 </html>
