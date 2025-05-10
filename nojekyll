@@ -1,0 +1,4 @@
+touch .nojekyll
+git add .nojekyll
+git commit -m "Allow static folder to serve README files"
+git push
