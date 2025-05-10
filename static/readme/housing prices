@@ -1,1 +1,12 @@
+# Predicting Housing Prices
+
+This regression model estimates housing prices based on multiple input features.
+
+## Key Features
+- Feature engineering and encoding
+- Linear regression with regularization
+- Performance metrics (RMSE, MAE, R²)
+
+## Skills Demonstrated
+Regression modeling, scikit-learn pipelines, evaluation metrics
 
