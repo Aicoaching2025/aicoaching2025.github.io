@@ -1,1 +1,12 @@
+# Support Vector Machines for Cancer Detection
+
+A classification model trained to distinguish malignant vs. benign tumors.
+
+## Key Features
+- Hyperparameter tuning of SVM kernel and regularization
+- Cross-validation and grid search
+- Visualization of decision boundaries
+
+## Skills Demonstrated
+Kernel methods, SVM, model selection
 
