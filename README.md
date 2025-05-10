@@ -1,4 +1,4 @@
-# 📊 Introducing Data Science and Machine Learning by Candace Grant
+# 📊 Data Science and Machine Learning Portfolio by Candace Grant
 
 Welcome to my **Data Science Portfolio**, a showcase of my expertise in **machine learning, data analysis, and predictive modeling**. This portfolio is designed to highlight my ability to extract **insights from complex datasets** and develop innovative solutions for real-world problems.
 
