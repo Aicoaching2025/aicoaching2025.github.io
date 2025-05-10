@@ -1,1 +1,12 @@
+# Quantitative vs. Categorical Data
+
+This project explores how to visualize and analyze the relationship between quantitative and categorical data types.
+
+## Key Features
+- Histograms and boxplots by category
+- Grouped summary statistics using `pandas`
+- Visual storytelling with `seaborn` and `matplotlib`
+
+## Skills Demonstrated
+Data wrangling, EDA, groupby operations, plotting by class
 
