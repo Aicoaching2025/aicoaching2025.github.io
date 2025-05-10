@@ -1,1 +1,12 @@
+# Naive Bayes for Email Spam Detection
+
+Using the Naive Bayes algorithm to classify email content as spam or not spam.
+
+## Key Features
+- Text preprocessing and vectorization with `CountVectorizer`
+- Naive Bayes classification using `MultinomialNB`
+- Model evaluation with precision, recall, and F1-score
+
+## Skills Demonstrated
+Natural language processing, feature extraction, probabilistic modeling
 
