@@ -1,1 +1,12 @@
+# Linear Algebra with Images
+
+This project visualizes image transformations using matrix operations and NumPy.
+
+## Key Features
+- Image loading and transformation (e.g., rotation, scaling)
+- Matrix multiplication and inverse operations
+- Visualization with `matplotlib`
+
+## Skills Demonstrated
+Matrix algebra, NumPy operations, linear transformations
 
