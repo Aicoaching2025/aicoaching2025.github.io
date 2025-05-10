@@ -1,1 +1,12 @@
+# Random Forests for Credit Risk Scoring
+
+Predicting customer creditworthiness using a random forest classifier.
+
+## Key Features
+- Feature importance ranking
+- Model tuning with grid search
+- Handling class imbalance
+
+## Skills Demonstrated
+Ensemble learning, classification, model optimization
 
