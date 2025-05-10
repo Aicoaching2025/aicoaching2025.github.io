@@ -1,1 +1,12 @@
+# Logistic Regression in Healthcare
+
+This binary classification model predicts health outcomes based on patient features.
+
+## Key Features
+- Logistic regression model using `scikit-learn`
+- Train-test split and accuracy scoring
+- ROC curve and confusion matrix analysis
+
+## Skills Demonstrated
+Classification, feature scaling, model evaluation
 
