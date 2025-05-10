@@ -87,4 +87,100 @@
 <body>
   <h1>Introducing Data Science and Machine Learning Projects</h1>
   <div class="container">
-    <h
+    <h2>By Candace Grant MA, PMP</h2>
+    <h3>Bachelor of Science in Information Systems, City University of New York, School of Professional Studies</h3>
+    <h3>Master of Arts in Education, City University of New York, Hunter College</h3>
+    <h3>Top Skills: Machine Learning, Data Science, Python for Software Engineering</h3>
+    <div class="grid-container" id="project-list"></div>
+  </div>
+
+  <script>
+    const projects = [
+      {
+        title: "Quantitative vs. Categorical Data",
+        description: "Exploring data analysis using categorical and quantitative data.",
+        colab_link: "https://colab.research.google.com/drive/1YIEivdJaPb2GFJX7FuFBzk1wegaA3abO?usp=sharing",
+        readme: "static/readme/project_one.md"
+      },
+      {
+        title: "Quantitative vs Quantitative Data",
+        description: "Data analysis comparing quantitative datasets.",
+        colab_link: "https://colab.research.google.com/drive/1jqQAFO-YXsDFvb2pwweBjhpzv_mgqUou?usp=sharing",
+        readme: "static/readme/project_two.md"
+      },
+      {
+        title: "Logistic Regression in Healthcare",
+        description: "Binary data classification.",
+        colab_link: "https://colab.research.google.com/drive/1wHtUFnXEZX_mcLWUOBGreJNCGS32-ujH?usp=sharing",
+        readme: "static/readme/project_three.md"
+      },
+      {
+        title: "Naive Bayes",
+        description: "Categorizing spam emails using probability.",
+        colab_link: "https://colab.research.google.com/github/Aicoaching2025/Naives-Bayes/blob/main/Naive_Bayes.ipynb",
+        readme: "static/readme/project_four.md"
+      },
+      {
+        title: "Random Forests",
+        description: "Enhancing credit scoring with ensemble learning.",
+        colab_link: "https://colab.research.google.com/drive/1BkuEv5_5gO9dIrgKUkBoucDVUveCBDjV?usp=sharing",
+        readme: "static/readme/project_five.md"
+      },
+      {
+        title: "Support Vector Machines",
+        description: "Cancer detection using classification algorithms.",
+        colab_link: "https://colab.research.google.com/drive/1XPnpQv0cWztPafV2d5MjM8ecDlBLjH0b?usp=sharing",
+        readme: "static/readme/project_six.md"
+      },
+      {
+        title: "Linear Algebra",
+        description: "Image transformation using NumPy and linear algebra.",
+        colab_link: "https://colab.research.google.com/drive/186NombQrhn9iPdP3gVL6EvhOOf94TSBb?usp=sharing",
+        readme: "static/readme/project_seven.md"
+      },
+      {
+        title: "Housing Prices",
+        description: "Predicting house prices using regression.",
+        colab_link: "https://colab.research.google.com/drive/1JOpLU7Ej1s9vIUg7NzohzBb3siXU5wO-?usp=sharing",
+        readme: "static/readme/project_eight.md"
+      },
+      {
+        title: "K Means Clustering",
+        description: "Segmenting customers using unsupervised learning.",
+        colab_link: "https://colab.research.google.com/drive/18Gh3nq51bqw0WyWoFozwp2Nx7CUGwOP7?usp=sharing",
+        readme: "static/readme/project_nine.md"
+      }
+    ];
+
+    const projectList = document.getElementById("project-list");
+
+    projects.forEach(project => {
+      const card = document.createElement("div");
+      card.classList.add("project-card");
+      card.innerHTML = `
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <a href="${project.colab_link}" target="_blank" class="btn">Run in Colab</a>
+        <button class="readme-btn" onclick="loadReadme('${project.readme}', this)">View README</button>
+        <div class="readme-content"></div>
+      `;
+      projectList.appendChild(card);
+    });
+
+    function loadReadme(path, button) {
+      fetch(path)
+        .then(response => response.text())
+        .then(data => {
+          const content = button.nextElementSibling;
+          content.innerHTML = `<pre>${data}</pre>`;
+          content.style.display = content.style.display === "block" ? "none" : "block";
+        })
+        .catch(error => {
+          const content = button.nextElementSibling;
+          content.innerHTML = `<pre style="color: red;">Error loading README: ${error.message}</pre>`;
+          content.style.display = "block";
+        });
+    }
+  </script>
+</body>
+</html>
